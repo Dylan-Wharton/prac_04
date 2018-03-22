@@ -5,6 +5,7 @@ def main():
         pick_numbers = []
         for i in range(6):
             pick_numbers.append(random.randint(0,45))
+        pick_numbers.sort()
         print(" ".join("{:2}".format(number) for number in pick_numbers))
 
 main()
